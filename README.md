@@ -1,4 +1,4 @@
-# fcps-units — Java 教學教材(學生版)
+# fcps-jkarel-units — Java 教學教材(學生版)
 
 以 FCPS(Fairfax County Public Schools)Karel J Robot 課程為基礎的 Java 教材,
 每個 Unit 是一個**獨立的 Eclipse 專案**,從 Karel 機器人入門一路到 Swing GUI、物件導向與資料處理。
@@ -51,7 +51,7 @@
 **兩種開法**:
 - **跑某一個 Unit(最單純)**:`File → Open Folder…` 直接開那個 Unit 資料夾(例如 `Unit1`)。
   此時工作目錄就是該專案根目錄,Karel 的 `maps/xxx.map`、專案內的 jar 全部就位。
-- **一次看整包**:`File → Open Workspace from File…` → 選 **`fcps-units.code-workspace`**。
+- **一次看整包**:`File → Open Workspace from File…` → 選 **`fcps-jkarel-units.code-workspace`**。
   它把每個 Unit 列為獨立資料夾,執行時 cwd 仍會落在「該檔所屬的 Unit 根目錄」,maps 一樣讀得到。
 
 > ⚠️ **不要**用 `Open Folder…` 開「repo 根目錄」再去跑 Karel 程式——那樣工作目錄會是 repo 根
