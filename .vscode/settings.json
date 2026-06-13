@@ -1,0 +1,28 @@
+{
+  // VS Code 的 Java 支援(Extension Pack for Java)底層就是 Eclipse 的 JDT
+  // 語言伺服器,直接讀各專案的 .project / .classpath,不需要 Maven/Gradle。
+  // 以下都是「機器無關」的設定,可安心進 git;與 Eclipse 並存、互不影響。
+
+  // 只匯入真正的 Eclipse 專案;排除 workspace metadata、編譯輸出、歷史封存
+  "java.import.exclusions": [
+    "**/.metadata/**",
+    "**/bin/**",
+    "**/archive/**",
+    "**/node_modules/**"
+  ],
+
+  // 教材刻意保留的「學生留白」會編不過;別讓 null 分析再加一排紅蚯蚓
+  "java.compile.nullAnalysis.mode": "disabled",
+
+  // 即使某些專案有(刻意的)編譯錯誤,仍允許執行能跑的那個 main
+  "java.debug.settings.onBuildFailureProceed": true,
+
+  // 與 repo 既有原則一致:一律 UTF-8(中文註解/字串不亂碼)
+  "files.encoding": "utf8",
+
+  // 隱藏雜訊,讓 Explorer 乾淨(這些都已 gitignore)
+  "files.exclude": {
+    "**/.metadata": true,
+    "**/bin": true
+  }
+}

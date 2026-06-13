@@ -1,0 +1,8 @@
+{
+  // 第一次在 VS Code 打開這個 repo 時,右下角會建議安裝以下擴充套件。
+  // vscode-java-pack 內含 Language Support for Java、Debugger、Maven 等,
+  // 是讀 .project / .classpath 並執行 Java 的核心。
+  "recommendations": [
+    "vscjava.vscode-java-pack"
+  ]
+}

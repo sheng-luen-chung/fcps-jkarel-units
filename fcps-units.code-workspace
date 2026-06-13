@@ -1,0 +1,45 @@
+{
+  // 用法:VS Code → File → Open Workspace from File… → 選這個檔。
+  //
+  // 為什麼用 multi-root:把每個 Unit 列為「獨立資料夾」,執行時 cwd 就會落在
+  // 該 Unit 的根目錄,Karel 的 maps/xxx.map(相對路徑)才讀得到;同時又能在
+  // 一個視窗裡看整包、用 Source Control 面板做 git。
+  //
+  // 若只想跑單一 Unit,也可以直接 Open Folder… 開那個 Unit 資料夾,效果一樣。
+  "folders": [
+    { "path": "Unit1" },
+    { "path": "Unit2" },
+    { "path": "Unit3" },
+    { "path": "Unit4" },
+    { "path": "Unit5" },
+    { "path": "SetupFiles" }
+  ],
+  "settings": {
+    "java.import.exclusions": [
+      "**/.metadata/**",
+      "**/bin/**",
+      "**/archive/**",
+      "**/node_modules/**"
+    ],
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.debug.settings.onBuildFailureProceed": true,
+    "files.encoding": "utf8"
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        // 用左側 Run and Debug 面板執行時,cwd 綁定該檔所屬的 Unit 根目錄。
+        // 直接按 main 上方的 Run CodeLens 通常也會用專案根目錄當 cwd。
+        "type": "java",
+        "name": "▶ 執行目前的 Java 檔(cwd = 該 Unit 根目錄)",
+        "request": "launch",
+        "mainClass": "${file}",
+        "cwd": "${fileWorkspaceFolder}"
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [ "vscjava.vscode-java-pack" ]
+  }
+}
