@@ -6,6 +6,18 @@
 > 🚀 **第一次安裝環境?** 先看 **[安裝手冊.md](安裝手冊.md)** —— 從零開始(裝 JDK、Eclipse 或
 > VS Code、打開專案、跑出第一支程式)的逐步流程。
 
+## 取得這份教材
+
+```bash
+# 有設 SSH 金鑰:
+git clone git@github.com:sheng-luen-chung/fcps-jkarel-units.git
+
+# 沒有 SSH 金鑰(用 HTTPS):
+git clone https://github.com/sheng-luen-chung/fcps-jkarel-units.git
+```
+
+或在 GitHub 頁面按 `Code → Download ZIP`,解壓縮到一個**路徑不含中文**的固定資料夾。
+
 ## 課程地圖
 
 | 專案 | 主題 |
