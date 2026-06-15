@@ -1,3 +1,5 @@
+package Lab03;
+
 	//Name______________________________ Date_____________
    import java.awt.*;
    import javax.swing.JPanel;

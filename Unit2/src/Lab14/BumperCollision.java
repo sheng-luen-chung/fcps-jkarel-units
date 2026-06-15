@@ -1,3 +1,5 @@
+package Lab14;
+
     // Phil Ero 15JUL08
     
     public class BumperCollision
