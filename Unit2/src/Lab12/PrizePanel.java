@@ -1,3 +1,5 @@
+package Lab12;
+
    //Name:    Date:
    import javax.swing.*;
    import java.awt.*;

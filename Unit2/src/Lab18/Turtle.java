@@ -1,3 +1,5 @@
+package Lab18;
+
 // Torbert, 7.20.06
 
    import java.awt.*;

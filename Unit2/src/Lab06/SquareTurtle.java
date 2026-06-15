@@ -1,3 +1,5 @@
+package Lab06;
+
 	//Name______________________________ Date_____________
    import edu.fcps.Turtle;
     public class SquareTurtle extends Turtle

@@ -1,3 +1,5 @@
+package Lab17;
+
 	// Torbert, 7.20.06
 
    import javax.swing.JFrame;

@@ -1,3 +1,5 @@
+package Lab08;
+
 	//Name______________________________ Date_____________
    import edu.fcps.Turtle;
    import java.awt.Color;
